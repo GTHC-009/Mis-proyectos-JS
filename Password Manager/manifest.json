@@ -1,0 +1,15 @@
+{
+    "name": "Password Manager",
+    "short_name": "PassManager",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "description": "A secure password manager",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
