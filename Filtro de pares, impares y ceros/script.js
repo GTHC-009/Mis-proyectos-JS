@@ -2,6 +2,8 @@ let número = document.getElementById("número");
 let numVal = undefined;
 let respuesta = document.getElementById("respuesta");
 
+let btn1 = document.getElementsByClassName("b1");
+
 let aviso = document.getElementById("aviso");
 let sugBtn = document.getElementById("suger");
 
@@ -11,6 +13,8 @@ let numCeros;
 
 const avisos = {
   inicial: "Escribe un número",
+  revisandoNum: "Revisando número",
+  numRevisado: "Número revisado exitosamente",
   soloNum: "Escribe sólo números",
   sinNum: "No hay números para borrar",
   sinRev: "No hay nada para revisar",
@@ -21,11 +25,11 @@ const avisos = {
   resCopiado: "Copiado al portapapeles",
   consLimp: () => {
     console.clear();
-    aviso.innerHTML = "Consola limpiada"
+    aviso.innerHTML = "Consola limpiada";
   }
 };
 
-aviso.innerHTML = avisos.inicial;
+
 
 
 let revisar = () => {
@@ -87,7 +91,7 @@ let borrar = () => {
   "Pares: <br> Impares: <br> Ceros:";
 }
 
-let suger = () => {
+let sugerir = () => {
   if (aviso.innerHTML === avisos.inicial) {
     número.focus();
     aviso.innerHTML = avisos.soloNum;
@@ -95,3 +99,13 @@ let suger = () => {
       número.focus();
     }
 }
+
+export default {
+  número,
+  btn1,
+  avisos,
+  revisar,
+  copiar,
+  borrar,
+  sugerir,
+};

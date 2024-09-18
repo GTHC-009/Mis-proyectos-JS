@@ -8,9 +8,9 @@
 <body>
 
   <div id="revision">
-    <button class="b1" onclick="borrar()"> X </button> 
+    <button class="b1"> X </button> 
     <input class="i" id="número" type="number" oninput="revisar()" ondblclick="select(value)">
-    <button class="b2" onclick="revisar()"> Revisar </button>
+    <button class="b2" onclick="window.location.href='index.html'"> Recargar página </button>
 
     <p class="p" id="respuesta">
     Pares: <br>Impares: <br>Ceros:
@@ -19,9 +19,10 @@
     <button class="b3" onclick="avisos.consLimp()"> Limpiar consola </button>
     <button class="b4" onclick="copiar()"> Copiar resultado </button>
 
-    <p class="aviso" id="aviso"> Escribe un número </p>
+    <p class="aviso" id="aviso"> Activa JavaSript primero </p>
   </div>
 
-<script type="text/javascript" src="script.js"></script>
+  <script src="script.js"></script>
+  <script src="eventos.js"></script>
 </body>
 </html>
