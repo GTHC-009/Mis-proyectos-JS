@@ -1,6 +1,12 @@
-body {
+  * {
+    margin: 0;
+    border-spacing: 0;
+  }
+  
+  body {
     font-family: arial;
     justify-content: center;
+    background-color: lightgreen;
   }
 
   #revision {
